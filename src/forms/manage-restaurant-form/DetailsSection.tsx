@@ -66,20 +66,6 @@ const DetailsSection = () => {
 
       <FormField
         control={control}
-        name="city"
-        render={({ field }) => (
-          <FormItem>
-            <FormLabel>City</FormLabel>
-            <FormControl>
-              <Input {...field} className="bg-white" />
-            </FormControl>
-            <FormMessage />
-          </FormItem>
-        )}
-      />
-
-      <FormField
-        control={control}
         name="deliveryPrice"
         render={({ field }) => (
           <FormItem className="max-w-[25%]">
