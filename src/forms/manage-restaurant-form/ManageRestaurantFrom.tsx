@@ -11,7 +11,7 @@ import LoadingButton from "@/components/LoadingButton";
 import { Button } from "@/components/ui/button";
 
 const formSchema = z.object({
-  restaurantNamee: z.string({
+  restaurantName: z.string({
     required_error: "restaurant name is required",
   }),
   city: z.string({
