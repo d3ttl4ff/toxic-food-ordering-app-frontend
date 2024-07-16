@@ -5,7 +5,6 @@ import UserProfileForm from "@/forms/user-profile-form/UserProfileForm";
 const UserProfileFormSkeleton = () => {
   return (
     <>
-      <span>Loading...</span>
       <div className="space-y-4 bg-gray-50 rounded-lg md:p-10">
         <div>
           <Skeleton className="h-8 w-48" />
