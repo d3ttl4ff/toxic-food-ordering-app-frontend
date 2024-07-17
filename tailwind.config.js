@@ -74,6 +74,7 @@ module.exports = {
       fontFamily: {
         grotesk: ['Space Grotesk', 'sans-serif'],
         poppins: ['Poppins', 'sans-serif'],
+        flesh_and_blood: ['Flesh and Blood'],
       },
     },
   },
