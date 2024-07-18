@@ -1,3 +1,5 @@
+const { warn } = require('console');
+
 /** @type {import('tailwindcss').Config} */
 module.exports = {
   darkMode: ["class"],
@@ -50,6 +52,13 @@ module.exports = {
         card: {
           DEFAULT: "hsl(var(--card))",
           foreground: "hsl(var(--card-foreground))",
+        },
+        // cutom colors
+        limeTheme : {
+          base_500: "hsl(var(--lime-theme-base-500))",
+          base_600: "hsl(var(--lime-theme-base-600))",
+          link_base_500: "hsl(var(--link-base-500))",
+          warning_base_500: "hsl(var(--warning-base-500))",
         },
       },
       borderRadius: {

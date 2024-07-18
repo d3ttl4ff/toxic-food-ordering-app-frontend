@@ -4,11 +4,11 @@ import MainNav from "./MainNav";
 
 export default function Header() {
   return (
-    <div className="border-b-2 border-b-lime-500 py-6">
+    <div className="border-b-2 border-b-limeTheme-base_500 py-6">
       <div className="container mx-auto flex justify-between items-center">
         <Link
           to="/"
-          className="text-3xl font-bold tracking-tight text-lime-500"
+          className="text-3xl font-bold tracking-tight text-limeTheme-base_500"
         >
           ToxicEats
         </Link>

@@ -128,7 +128,7 @@ const UserProfileForm = ({ onSave, isLoading, currentUser }: Props) => {
         {isLoading ? (
           <LoadingButton />
         ) : (
-          <Button type="submit" className="bg-lime-500">
+          <Button type="submit" className="bg-limeTheme-base_500">
             Update Profile
           </Button>
         )}

@@ -15,7 +15,7 @@ export default function HomePage() {
   return (
     <div className="flex flex-col gap-12">
       <div className="md:px-32 backdrop-blur-md bg-white/50 rounded-lg shadow-md py-8 flex flex-col gap-5 text-center -mt-16">
-        <h1 className="text-5xl font-bold tracking-tight text-lime-600">
+        <h1 className="text-5xl font-bold tracking-tight text-limeTheme-base_600">
           Give in to your toxic snack today!
         </h1>
         <span className="text-xl">Food is just a heart attack away!</span>

@@ -10,7 +10,7 @@ type Props = {
 const SearchResultCard = ({ restaurant }: Props) => {
   return (
     <Link
-      to={`/details/${restaurant._id}`}
+      to={`/detail/${restaurant._id}`}
       className="grid lg:grid-cols-[2fr_3fr] gap-5 group"
     >
       <AspectRatio ratio={16 / 6}>
@@ -34,8 +34,8 @@ const SearchResultCard = ({ restaurant }: Props) => {
             ))}
           </div>
           <div className="flex gap-2 flex-col">
-            <div className="flex items-center gap-1 text-lime-600">
-              <Clock className="text-lime-600" />
+            <div className="flex items-center gap-1 text-limeTheme-base_600">
+              <Clock className="text-limeTheme-base_600" />
               {restaurant.estimatedDeliveryTime} mins
             </div>
             <div className="flex items-center gap-1">

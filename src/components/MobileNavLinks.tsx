@@ -7,7 +7,7 @@ export default function MobileNavLinks() {
   return (
     <>
       <Link
-        className="flex bg-white items-center font-bold hover:text-lime-500"
+        className="flex bg-white items-center font-bold hover:text-limeTheme-base_500"
         to={"/user-profile"}
       >
         User Profile
