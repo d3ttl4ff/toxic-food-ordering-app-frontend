@@ -83,7 +83,7 @@ const CuisineFilter = ({
             </span>
           ) : (
             <span className="flex flex-row items-center">
-              View Less <ChevronDown />
+              View More <ChevronDown />
             </span>
           )}
         </Button>
