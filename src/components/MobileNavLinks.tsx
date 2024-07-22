@@ -8,6 +8,18 @@ export default function MobileNavLinks() {
     <>
       <Link
         className="flex bg-white items-center font-bold hover:text-limeTheme-base_500"
+        to={"/order-status"}
+      >
+        Order Status
+      </Link>
+      <Link
+        className="flex bg-white items-center font-bold hover:text-limeTheme-base_500"
+        to={"/manage-restaurant"}
+      >
+        My Restaurant
+      </Link>
+      <Link
+        className="flex bg-white items-center font-bold hover:text-limeTheme-base_500"
         to={"/user-profile"}
       >
         User Profile

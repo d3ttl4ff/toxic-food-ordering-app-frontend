@@ -32,7 +32,7 @@ export default function UsernameMenu() {
   return (
     <DropdownMenu open={isDropdownOpen} onOpenChange={setIsDropdownOpen}>
       <DropdownMenuTrigger
-        className="flex items-center px-3 font-bold hover:text-limeTheme-base_500 gap-2 focus:outline-none"
+        className="flex items-center px-3 font-bold hover:text-limeTheme-base_500 gap-2 focus:outline-none transition-all"
         onClick={() => setIsDropdownOpen(!isDropdownOpen)}
       >
         <CircleUserRound className="text-limeTheme-base_500" />
@@ -40,12 +40,18 @@ export default function UsernameMenu() {
       </DropdownMenuTrigger>
       <DropdownMenuContent className="">
         <DropdownMenuItem>
-          <Link to="/manage-restaurant" className="font-bold hover:text-limeTheme-base_500">
+          <Link
+            to="/manage-restaurant"
+            className="font-bold hover:text-limeTheme-base_500"
+          >
             Manage Restaurant
           </Link>
         </DropdownMenuItem>
         <DropdownMenuItem>
-          <Link to="/user-profile" className="font-bold hover:text-limeTheme-base_500">
+          <Link
+            to="/user-profile"
+            className="font-bold hover:text-limeTheme-base_500"
+          >
             User Profile
           </Link>
         </DropdownMenuItem>

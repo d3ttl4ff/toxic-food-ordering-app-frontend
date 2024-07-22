@@ -1,6 +1,7 @@
 import { useAuth0 } from "@auth0/auth0-react";
 import { Button } from "./ui/button";
 import UsernameMenu from "./UsernameMenu";
+import { Link } from "react-router-dom";
 
 export default function MainNav() {
   const { loginWithRedirect, isAuthenticated } = useAuth0();
@@ -8,7 +9,15 @@ export default function MainNav() {
   return (
     <span className="flex space-x-2 items-center">
       {isAuthenticated ? (
-        <UsernameMenu />
+        <>
+          <Link
+            to="/order-status"
+            className="font-bold hover:text-limeTheme-base_500 transition-all"
+          >
+            Order Status
+          </Link>
+          <UsernameMenu />
+        </>
       ) : (
         <Button
           variant="ghost"
