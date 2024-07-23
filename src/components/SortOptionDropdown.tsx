@@ -13,11 +13,15 @@ type Props = {
 
 const SORT_OPTIONS = [
   {
+    label: "Recently Updated",
+    value: "lastUpdated",
+  },
+  {
     label: "Best Match",
     value: "bestMatch",
   },
   {
-    label: "Delivery Price",
+    label: "Delivery Price", 
     value: "deliveryPrice",
   },
   {
@@ -27,7 +31,7 @@ const SORT_OPTIONS = [
 ];
 
 const SortOptionDropdown = ({ onChange, sortOption }: Props) => {
-  const selectedLabel =
+  const selectedSortLabel =
     SORT_OPTIONS.find((option) => option.value === sortOption)?.label ||
     SORT_OPTIONS[0].label;
 
@@ -35,7 +39,7 @@ const SortOptionDropdown = ({ onChange, sortOption }: Props) => {
     <DropdownMenu>
       <DropdownMenuTrigger className="cursor-pointer">
         <Button variant="outline" className="w-full">
-          Sort by: {selectedLabel}
+          Sort by: {selectedSortLabel}
         </Button>
       </DropdownMenuTrigger>
       <DropdownMenuContent className="p-2">

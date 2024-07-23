@@ -22,7 +22,7 @@ const SearchPage = () => {
     searchQuery: "",
     page: 1,
     selectedCuisines: [],
-    sortOption: "bestMatch",
+    sortOption: "lastUpdated",
   });
 
   const [isExpanded, setIsExpanded] = useState<boolean>(false);
