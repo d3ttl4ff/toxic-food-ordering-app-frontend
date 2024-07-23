@@ -19,6 +19,50 @@ export type CartItem = {
   quantity: number;
 };
 
+const cuisineImageMapping: { [key: string]: string } = {
+  "Beastial": "/src/assets/cuisine images/cauldron.webp",
+  "Fleshborne": "/src/assets/cuisine images/potion.webp",
+  "Bloodborne": "/src/assets/cuisine images/potion.webp",
+  "Nibbles": "/src/assets/cuisine images/cookies.webp",
+  "Celestial": "/src/assets/cuisine images/gem.webp",
+  "Shadowroot": "/src/assets/cuisine images/herbs.webp",
+  "Eldritch": "/src/assets/cuisine images/owl.webp",
+  "Mystic": "/src/assets/cuisine images/potion.webp",
+  "Arcane": "/src/assets/cuisine images/book.webp",
+  "Infernal": "/src/assets/cuisine images/cauldron.webp",
+  "Cursed": "/src/assets/cuisine images/window.webp",
+  "Draconic": "/src/assets/cuisine images/staff.webp",
+  "Abyssal": "/src/assets/cuisine images/cauldron.webp",
+  "Spectral": "/src/assets/cuisine images/window.webp",
+  "Haunted": "/src/assets/cuisine images/window.webp",
+  "Necrotic": "/src/assets/cuisine images/cauldron.webp",
+  "Wraithfare": "/src/assets/cuisine images/cauldron.webp",
+  "Phantasmal": "/src/assets/cuisine images/window.webp",
+  "Lich": "/src/assets/cuisine images/window.webp",
+  "Revenant": "/src/assets/cuisine images/window.webp",
+  "Forbidden": "/src/assets/cuisine images/book.webp",
+  "Vampire": "/src/assets/cuisine images/potion.webp",
+  "Vittles": "/src/assets/cuisine images/cookies.webp",
+  "Enchanted": "/src/assets/cuisine images/gem.webp",
+  "Hexed": "/src/assets/cuisine images/window.webp",
+  "Twilight": "/src/assets/cuisine images/window.webp",
+  "DoomDew": "/src/assets/cuisine images/potion.webp",
+  "Fiendish": "/src/assets/cuisine images/cauldron.webp",
+  "Delights": "/src/assets/cuisine images/cookies.webp",
+  "Darkling": "/src/assets/cuisine images/window.webp",
+  "NightDew": "/src/assets/cuisine images/tea.webp",
+  "Elixir": "/src/assets/cuisine images/potion.webp",
+  "Spellbound": "/src/assets/cuisine images/book.webp",
+  "Moonshine": "/src/assets/cuisine images/tea.webp",
+  "Soul": "/src/assets/cuisine images/puff.webp",
+  "DragonBreath": "/src/assets/cuisine images/cauldron.webp",
+  "Witch's": "/src/assets/cuisine images/cauldron.webp",
+  "Sorcerer's": "/src/assets/cuisine images/cauldron.webp",
+  "BloodySweets": "/src/assets/cuisine images/toffee.webp",
+  "Rotten": "/src/assets/cuisine images/herbs.webp",
+  "Blood": "/src/assets/cuisine images/potion.webp"
+};
+
 const DetailPage = () => {
   const { restaurantId } = useParams();
   const { restaurant, isLoading } = useGetRestaurant(restaurantId);
@@ -127,12 +171,26 @@ const DetailPage = () => {
         <div className="flex flex-col gap-4">
           <RestaurantInfo restaurant={restaurant} />
           <span className="text-2xl font-bold tracking-tight">Menu</span>
-          {restaurant.menuItems.map((menuItem) => (
-            <MenuItem
-              menuItem={menuItem}
-              addToCart={() => addToCart(menuItem)}
-            />
-          ))}
+          {restaurant.menuItems.map((menuItem) => {
+            const firstWord = menuItem.name.split(" ")[0];
+            const imageUrl = cuisineImageMapping[firstWord];
+
+            return (
+              <div className="flex items-center justify-between gap-5">
+                <MenuItem
+                  menuItem={menuItem}
+                  addToCart={() => addToCart(menuItem)}
+                />
+                {imageUrl && (
+                  <img
+                    src={imageUrl}
+                    alt={`${firstWord} cuisine image`}
+                    className="w-20 h-20 object-cover"
+                  />
+                )}
+              </div>
+            );
+          })}
         </div>
         <div>
           <Card>

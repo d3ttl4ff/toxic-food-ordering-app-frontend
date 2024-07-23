@@ -9,7 +9,7 @@ type Props = {
 const MenuItem = ({ menuItem, addToCart }: Props) => {
   return (
     <Card
-      className="cursor-pointer border-l-4 border-l-limeTheme-base_500 hover:border-l-8 hover:border-l-limeTheme-selection_base transition-all"
+      className="cursor-pointer border-l-4 border-l-limeTheme-base_500 hover:border-l-8 hover:border-l-limeTheme-selection_base transition-all w-full"
       onClick={addToCart}
     >
       <CardHeader>
