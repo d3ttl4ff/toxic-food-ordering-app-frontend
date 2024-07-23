@@ -12,7 +12,20 @@ import { useState } from "react";
 import { useParams } from "react-router-dom";
 import { SpinnerDotted } from "spinners-react";
 
+import beans from "../assets/cuisineImages/beans.webp";
+import book from "../assets/cuisineImages/book.webp";
 import cauldron from "../assets/cuisineImages/cauldron.webp";
+import cookies from "../assets/cuisineImages/cookies.webp";
+import gem from "../assets/cuisineImages/gem.webp";
+import herbs from "../assets/cuisineImages/herbs.webp";
+import owl from "../assets/cuisineImages/owl.webp";
+import potion from "../assets/cuisineImages/potion.webp";
+import puff from "../assets/cuisineImages/puff.webp";
+import rose from "../assets/cuisineImages/rose.webp";
+import staff from "../assets/cuisineImages/staff.webp";
+import tea from "../assets/cuisineImages/tea.webp";
+import toffee from "../assets/cuisineImages/toffee.webp";
+import window from "../assets/cuisineImages/window.webp";
 
 export type CartItem = {
   _id: string;
@@ -22,47 +35,47 @@ export type CartItem = {
 };
 
 const cuisineImageMapping: { [key: string]: string } = {
-  "Beastial": cauldron,
-  "Fleshborne": "/src/assets/cuisineImages/potion.webp",
-  "Bloodborne": "/src/assets/cuisineImages/potion.webp",
-  "Nibbles": "/src/assets/cuisineImages/cookies.webp",
-  "Celestial": "/src/assets/cuisineImages/gem.webp",
-  "Shadowroot": "/src/assets/cuisineImages/herbs.webp",
-  "Eldritch": "/src/assets/cuisineImages/owl.webp",
-  "Mystic": "/src/assets/cuisineImages/potion.webp",
-  "Arcane": "/src/assets/cuisineImages/book.webp",
-  "Infernal": cauldron,
-  "Cursed": "/src/assets/cuisineImages/window.webp",
-  "Draconic": "/src/assets/cuisineImages/staff.webp",
-  "Abyssal": cauldron,
-  "Spectral": "/src/assets/cuisineImages/window.webp",
-  "Haunted": "/src/assets/cuisineImages/window.webp",
-  "Necrotic": cauldron,
-  "Wraithfare": cauldron,
-  "Phantasmal": "/src/assets/cuisineImages/window.webp",
-  "Lich": "/src/assets/cuisineImages/window.webp",
-  "Revenant": "/src/assets/cuisineImages/window.webp",
-  "Forbidden": "/src/assets/cuisineImages/book.webp",
-  "Vampire": "/src/assets/cuisineImages/potion.webp",
-  "Vittles": "/src/assets/cuisineImages/cookies.webp",
-  "Enchanted": "/src/assets/cuisineImages/gem.webp",
-  "Hexed": "/src/assets/cuisineImages/window.webp",
-  "Twilight": "/src/assets/cuisineImages/window.webp",
-  "DoomDew": "/src/assets/cuisineImages/potion.webp",
-  "Fiendish": cauldron,
-  "Delights": "/src/assets/cuisineImages/cookies.webp",
-  "Darkling": "/src/assets/cuisineImages/window.webp",
-  "NightDew": "/src/assets/cuisineImages/tea.webp",
-  "Elixir": "/src/assets/cuisineImages/potion.webp",
-  "Spellbound": "/src/assets/cuisineImages/book.webp",
-  "Moonshine": "/src/assets/cuisineImages/tea.webp",
-  "Soul": "/src/assets/cuisineImages/puff.webp",
-  "DragonBreath": cauldron,
+  "Beastial": owl,
+  "Fleshborne": cauldron,
+  "Bloodborne": cauldron,
+  "Nibbles": cookies,
+  "Celestial": book,
+  "Shadowroot": rose,
+  "Eldritch": staff,
+  "Mystic": herbs,
+  "Arcane": staff,
+  "Infernal": book,
+  "Cursed": potion,
+  "Draconic": beans,
+  "Abyssal": cookies,
+  "Spectral": puff,
+  "Haunted": book,
+  "Necrotic": gem,
+  "Wraithfare": puff,
+  "Phantasmal": puff,
+  "Lich": gem,
+  "Revenant": owl,
+  "Forbidden": beans,
+  "Vampire": window,
+  "Vittles": cookies,
+  "Enchanted": rose,
+  "Hexed": cauldron,
+  "Twilight": gem,
+  "DoomDew": tea,
+  "Fiendish": book,
+  "Delights": toffee,
+  "Darkling": cookies,
+  "NightDew": potion,
+  "Elixir": potion,
+  "Spellbound": staff,
+  "Moonshine": potion,
+  "Soul": herbs,
+  "DragonBreath": owl,
   "Witch's": cauldron,
-  "Sorcerer's": cauldron,
-  "BloodySweets": "/src/assets/cuisineImages/toffee.webp",
-  "Rotten": "/src/assets/cuisineImages/herbs.webp",
-  "Blood": "/src/assets/cuisineImages/potion.webp"
+  "Sorcerer's": staff,
+  "BloodySweets": toffee,
+  "Rotten": herbs,
+  "Blood": cauldron, 
 };
 
 const DetailPage = () => {
