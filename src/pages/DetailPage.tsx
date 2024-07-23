@@ -25,7 +25,7 @@ import rose from "../assets/cuisineImages/rose.webp";
 import staff from "../assets/cuisineImages/staff.webp";
 import tea from "../assets/cuisineImages/tea.webp";
 import toffee from "../assets/cuisineImages/toffee.webp";
-import window from "../assets/cuisineImages/window.webp";
+import windowvamp from "../assets/cuisineImages/window.webp";
 
 export type CartItem = {
   _id: string;
@@ -56,7 +56,7 @@ const cuisineImageMapping: { [key: string]: string } = {
   "Lich": gem,
   "Revenant": owl,
   "Forbidden": beans,
-  "Vampire": window,
+  "Vampire": windowvamp,
   "Vittles": cookies,
   "Enchanted": rose,
   "Hexed": cauldron,
