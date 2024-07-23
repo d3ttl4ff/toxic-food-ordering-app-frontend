@@ -12,6 +12,8 @@ import { useState } from "react";
 import { useParams } from "react-router-dom";
 import { SpinnerDotted } from "spinners-react";
 
+import cauldron from "../assets/cuisineImages/cauldron.webp";
+
 export type CartItem = {
   _id: string;
   name: string;
@@ -20,7 +22,7 @@ export type CartItem = {
 };
 
 const cuisineImageMapping: { [key: string]: string } = {
-  "Beastial": "/src/assets/cuisineImages/cauldron.webp",
+  "Beastial": cauldron,
   "Fleshborne": "/src/assets/cuisineImages/potion.webp",
   "Bloodborne": "/src/assets/cuisineImages/potion.webp",
   "Nibbles": "/src/assets/cuisineImages/cookies.webp",
@@ -29,14 +31,14 @@ const cuisineImageMapping: { [key: string]: string } = {
   "Eldritch": "/src/assets/cuisineImages/owl.webp",
   "Mystic": "/src/assets/cuisineImages/potion.webp",
   "Arcane": "/src/assets/cuisineImages/book.webp",
-  "Infernal": "/src/assets/cuisineImages/cauldron.webp",
+  "Infernal": cauldron,
   "Cursed": "/src/assets/cuisineImages/window.webp",
   "Draconic": "/src/assets/cuisineImages/staff.webp",
-  "Abyssal": "/src/assets/cuisineImages/cauldron.webp",
+  "Abyssal": cauldron,
   "Spectral": "/src/assets/cuisineImages/window.webp",
   "Haunted": "/src/assets/cuisineImages/window.webp",
-  "Necrotic": "/src/assets/cuisineImages/cauldron.webp",
-  "Wraithfare": "/src/assets/cuisineImages/cauldron.webp",
+  "Necrotic": cauldron,
+  "Wraithfare": cauldron,
   "Phantasmal": "/src/assets/cuisineImages/window.webp",
   "Lich": "/src/assets/cuisineImages/window.webp",
   "Revenant": "/src/assets/cuisineImages/window.webp",
@@ -47,7 +49,7 @@ const cuisineImageMapping: { [key: string]: string } = {
   "Hexed": "/src/assets/cuisineImages/window.webp",
   "Twilight": "/src/assets/cuisineImages/window.webp",
   "DoomDew": "/src/assets/cuisineImages/potion.webp",
-  "Fiendish": "/src/assets/cuisineImages/cauldron.webp",
+  "Fiendish": cauldron,
   "Delights": "/src/assets/cuisineImages/cookies.webp",
   "Darkling": "/src/assets/cuisineImages/window.webp",
   "NightDew": "/src/assets/cuisineImages/tea.webp",
@@ -55,9 +57,9 @@ const cuisineImageMapping: { [key: string]: string } = {
   "Spellbound": "/src/assets/cuisineImages/book.webp",
   "Moonshine": "/src/assets/cuisineImages/tea.webp",
   "Soul": "/src/assets/cuisineImages/puff.webp",
-  "DragonBreath": "/src/assets/cuisineImages/cauldron.webp",
-  "Witch's": "/src/assets/cuisineImages/cauldron.webp",
-  "Sorcerer's": "/src/assets/cuisineImages/cauldron.webp",
+  "DragonBreath": cauldron,
+  "Witch's": cauldron,
+  "Sorcerer's": cauldron,
   "BloodySweets": "/src/assets/cuisineImages/toffee.webp",
   "Rotten": "/src/assets/cuisineImages/herbs.webp",
   "Blood": "/src/assets/cuisineImages/potion.webp"
