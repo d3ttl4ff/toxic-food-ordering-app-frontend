@@ -28,7 +28,7 @@ const ThemeSwitcher = () => {
   return (
     <button
       onClick={handleThemeSwitch}
-      className="bg-limeTheme-base_500 dark:bg-foreground p-2 rounded-lg"
+      className="bg-limeTheme-base_500 dark:bg-foreground p-2 rounded-full"
     >
       {theme === "dark" ? (
         <FaMoon className="text-background" />
