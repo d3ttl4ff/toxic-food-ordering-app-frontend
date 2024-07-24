@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import hero from "../assets/main images/hero6.jpg";
+// import hero from "../assets/main images/hero6.jpg";
 import { LampContainer } from "./uiAceternity/lamp";
 
 export default function Hero() {
