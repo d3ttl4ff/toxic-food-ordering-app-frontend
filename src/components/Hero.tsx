@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-// import hero from "../assets/main images/hero6.jpg";
+import hero from "../assets/main images/hero6.jpg";
 import { LampContainer } from "./uiAceternity/lamp";
 
 export default function Hero() {
@@ -19,7 +19,7 @@ export default function Hero() {
             duration: 0.8,
             ease: "easeInOut",
           }}
-          className="mt-8 bg-gradient-to-br from-limeTheme-selection_base dark:from-foreground to-limeTheme-selection_base dark:to-foreground py-4 bg-clip-text text-center text-4xl font-medium tracking-tight text-transparent md:text-7xl"
+          className="mt-10 bg-gradient-to-br from-limeTheme-selection_base dark:from-foreground to-limeTheme-selection_base dark:to-foreground py-4 bg-clip-text text-center text-4xl font-medium tracking-tight text-transparent md:text-7xl"
         >
           "Consume away the will" <br /> Savor the vile{" "}
           <span className="text-limeTheme-base_500">blood</span>

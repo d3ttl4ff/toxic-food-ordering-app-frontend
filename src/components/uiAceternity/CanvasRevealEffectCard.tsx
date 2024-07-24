@@ -19,7 +19,7 @@ import {
 export function CanvasRevealEffectCard() {
   return (
     <>
-      <div className="flex flex-col md:flex-row gap-10 justify-between">
+      <div className="flex flex-col md:flex-row gap-[3.5vw] justify-between">
         <Card
           title="Velen"
           subTitle="Hover over me"
@@ -115,7 +115,7 @@ const Card = ({
     <div
       onMouseEnter={() => setHovered(true)}
       onMouseLeave={() => setHovered(false)}
-      className="border border-limeTheme-base_600 group/canvas-card flex items-center justify-center dark:border-foreground/[0.2]  max-w-sm w-80 mx-auto p-4 relative h-[25rem]"
+      className="border border-limeTheme-base_600 group/canvas-card flex items-center justify-center dark:border-foreground/[0.2] max-w-sm w-80 md:w-[20vw] mx-auto p-4 relative h-[25rem]"
       style={{
         backgroundImage: `url(${bgImage})`,
         backgroundSize: "cover",

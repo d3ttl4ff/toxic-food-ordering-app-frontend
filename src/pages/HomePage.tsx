@@ -64,7 +64,7 @@ export default function HomePage() {
       </div>
 
       <div className="flex flex-col items-center gap-5 my-8">
-        <div className="text-lg">
+        <div className="text-lg mb-5">
           Now{" "}
           <span className="text-limeTheme-base_500 hover:font-bold transition-all">
             available
