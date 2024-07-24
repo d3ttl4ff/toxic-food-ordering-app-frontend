@@ -63,7 +63,7 @@ export default function HomePage() {
         <BackgroundBeams />
       </div>
 
-      <div className="flex flex-col items-center gap-5">
+      <div className="flex flex-col items-center gap-5 my-8">
         <div className="text-lg">
           Now{" "}
           <span className="text-limeTheme-base_500 hover:font-bold transition-all">
@@ -76,7 +76,7 @@ export default function HomePage() {
 
       <Separator />
 
-      <div className="md:px-32 relative bg-limeTheme-selection_base dark:backdrop-blur-3xl dark:bg-white/10 rounded-lg shadow-md py-8 text-center overflow-hidden">
+      <div className="md:px-32 relative bg-limeTheme-selection_base dark:backdrop-blur-3xl dark:bg-white/10 rounded-lg shadow-md py-8 text-center overflow-hidden my-8">
         <div className="flex gap-3 items-center justify-center">
           {cuisineImageList.map((image, index) => (
             <img
@@ -90,7 +90,7 @@ export default function HomePage() {
         <BackgroundBeams />
       </div>
 
-      <div className="grid md:grid-cols-2 gap-5">
+      <div className="grid md:grid-cols-2 gap-5 mb-8">
         <img src={landingImage} alt="landing image" />
         <div className="flex flex-col items-center justify-center gap-4 text-center">
           <span className="font-bold text-3xl tracking-tighter">
