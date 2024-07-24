@@ -92,10 +92,10 @@ const OrderStatusHeader = ({ order }: Props) => {
           getOrderStatusInfo().progressValue === 100 ? "" : "animate-pulse"
         }
         value={getOrderStatusInfo().progressValue}
-        color={getOrderStatusInfo().progressValue === 100 ? "#65a30d" : ""}
+        color={getOrderStatusInfo().progressValue === 100 ? "#84cc16" : ""}
       />
     </>
-  );
+  ); 
 };
 
 export default OrderStatusHeader;

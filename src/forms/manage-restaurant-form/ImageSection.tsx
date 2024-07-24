@@ -41,9 +41,9 @@ const ImageSection = () => {
             <FormItem>
               <FormControl>
                 <Input
-                  className="bg-white"
+                  className="bg-white text-background"
                   type="file"
-                  accept=".jpg, .jpeg, .png"
+                  accept=".jpg, .jpeg, .png, .webp"
                   onChange={(event) =>
                     field.onChange(
                       event.target.files ? event.target.files[0] : null

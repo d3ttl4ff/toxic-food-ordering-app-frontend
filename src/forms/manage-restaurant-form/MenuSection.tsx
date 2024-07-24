@@ -16,7 +16,7 @@ const MenuSection = () => {
       <div>
         <h2 className="text-2xl font-bold">Menu</h2>
         <FormDescription>
-          Create your meny and give each item a name and a price
+          Create your menu and give each item a name and a price
         </FormDescription>
       </div>
       <FormField

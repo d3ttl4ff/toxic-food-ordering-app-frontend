@@ -31,7 +31,7 @@ const MenuItemInput = ({ index, removeMenuItem }: Props) => {
               <Input
                 {...field}
                 placeholder="Chicken Pizza"
-                className="bg-white"
+                className="bg-background"
               />
             </FormControl>
           </FormItem>
@@ -46,7 +46,7 @@ const MenuItemInput = ({ index, removeMenuItem }: Props) => {
               Price ($) <FormMessage />
             </FormLabel>
             <FormControl>
-              <Input {...field} placeholder="13.00" className="bg-white" />
+              <Input {...field} placeholder="13.00" className="bg-background" />
             </FormControl>
           </FormItem>
         )}

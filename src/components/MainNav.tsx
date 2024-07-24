@@ -2,6 +2,7 @@ import { useAuth0 } from "@auth0/auth0-react";
 import { Button } from "./ui/button";
 import UsernameMenu from "./UsernameMenu";
 import { Link } from "react-router-dom";
+import ThemeSwitcher from "./ThemeSwitcher";
 
 export default function MainNav() {
   const { loginWithRedirect, isAuthenticated } = useAuth0();
@@ -27,6 +28,7 @@ export default function MainNav() {
           Log In
         </Button>
       )}
+      <ThemeSwitcher />
     </span>
   );
 }

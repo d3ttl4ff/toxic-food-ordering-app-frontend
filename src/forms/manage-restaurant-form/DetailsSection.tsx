@@ -28,7 +28,7 @@ const DetailsSection = () => {
           <FormItem>
             <FormLabel>Name</FormLabel>
             <FormControl>
-              <Input {...field} className="bg-white" />
+              <Input {...field} className="bg-background" />
             </FormControl>
             <FormMessage />
           </FormItem>
@@ -43,7 +43,7 @@ const DetailsSection = () => {
             <FormItem className="flex-1">
               <FormLabel>City</FormLabel>
               <FormControl>
-                <Input {...field} className="bg-white" />
+                <Input {...field} className="bg-background" />
               </FormControl>
               <FormMessage />
             </FormItem>
@@ -56,7 +56,7 @@ const DetailsSection = () => {
             <FormItem className="flex-1">
               <FormLabel>Country</FormLabel>
               <FormControl>
-                <Input {...field} className="bg-white" />
+                <Input {...field} className="bg-background" />
               </FormControl>
               <FormMessage />
             </FormItem>
@@ -71,7 +71,7 @@ const DetailsSection = () => {
           <FormItem className="max-w-[25%]">
             <FormLabel>Estimated Price ($)</FormLabel>
             <FormControl>
-              <Input {...field} className="bg-white" placeholder="3.50" />
+              <Input {...field} className="bg-background" placeholder="3.50" />
             </FormControl>
             <FormMessage />
           </FormItem>
@@ -85,7 +85,7 @@ const DetailsSection = () => {
           <FormItem className="max-w-[25%]">
             <FormLabel>Estimated Delivery Time (minutes)</FormLabel>
             <FormControl>
-              <Input {...field} className="bg-white" placeholder=" 45" />
+              <Input {...field} className="bg-background" placeholder=" 45" />
             </FormControl>
             <FormMessage />
           </FormItem>

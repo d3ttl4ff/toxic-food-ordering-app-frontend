@@ -12,20 +12,20 @@ import { useState } from "react";
 import { useParams } from "react-router-dom";
 import { SpinnerDotted } from "spinners-react";
 
-import beans from "../assets/cuisineImages/beans.webp";
-import book from "../assets/cuisineImages/book.webp";
-import cauldron from "../assets/cuisineImages/cauldron.webp";
-import cookies from "../assets/cuisineImages/cookies.webp";
-import gem from "../assets/cuisineImages/gem.webp";
-import herbs from "../assets/cuisineImages/herbs.webp";
-import owl from "../assets/cuisineImages/owl.webp";
-import potion from "../assets/cuisineImages/potion.webp";
-import puff from "../assets/cuisineImages/puff.webp";
-import rose from "../assets/cuisineImages/rose.webp";
-import staff from "../assets/cuisineImages/staff.webp";
-import tea from "../assets/cuisineImages/tea.webp";
-import toffee from "../assets/cuisineImages/toffee.webp";
-import windowvamp from "../assets/cuisineImages/window.webp";
+import beans from "../assets/cuisineImages/beansLime.webp";
+import book from "../assets/cuisineImages/bookLime.webp";
+import cauldron from "../assets/cuisineImages/cauldronLime.webp";
+import cookies from "../assets/cuisineImages/cookiesLime.webp";
+import gem from "../assets/cuisineImages/gemLime.webp";
+import herbs from "../assets/cuisineImages/herbsLime.webp";
+import owl from "../assets/cuisineImages/owlLime.webp";
+import potion from "../assets/cuisineImages/potionLime.webp";
+import puff from "../assets/cuisineImages/puffLime.webp";
+import rose from "../assets/cuisineImages/roseLime.webp";
+import staff from "../assets/cuisineImages/staffLime.webp";
+import tea from "../assets/cuisineImages/teaLime.webp";
+import toffee from "../assets/cuisineImages/toffeeLime.webp";
+import windowvamp from "../assets/cuisineImages/windowLime.webp";
 
 export type CartItem = {
   _id: string;
@@ -34,48 +34,99 @@ export type CartItem = {
   quantity: number;
 };
 
-const cuisineImageMapping: { [key: string]: string } = {
-  "Beastial": owl,
-  "Fleshborne": cauldron,
-  "Bloodborne": cauldron,
-  "Nibbles": cookies,
-  "Celestial": book,
-  "Shadowroot": rose,
-  "Eldritch": staff,
-  "Mystic": herbs,
-  "Arcane": staff,
-  "Infernal": book,
-  "Cursed": potion,
-  "Draconic": beans,
-  "Abyssal": cookies,
-  "Spectral": puff,
-  "Haunted": book,
-  "Necrotic": gem,
-  "Wraithfare": puff,
-  "Phantasmal": puff,
-  "Lich": gem,
-  "Revenant": owl,
-  "Forbidden": beans,
-  "Vampire": windowvamp,
-  "Vittles": cookies,
-  "Enchanted": rose,
-  "Hexed": cauldron,
-  "Twilight": gem,
-  "DoomDew": tea,
-  "Fiendish": book,
-  "Delights": toffee,
-  "Darkling": cookies,
-  "NightDew": potion,
-  "Elixir": potion,
-  "Spellbound": staff,
-  "Moonshine": potion,
-  "Soul": herbs,
-  "DragonBreath": owl,
-  "Witch's": cauldron,
-  "Sorcerer's": staff,
-  "BloodySweets": toffee,
-  "Rotten": herbs,
-  "Blood": cauldron, 
+// const cuisineImageMapping: { [key: string]: string } = {
+//   "Beastial": owl,
+//   "Fleshborne": cauldron,
+//   "Bloodborne": cauldron,
+//   "Nibbles": cookies,
+//   "Celestial": book,
+//   "Shadowroot": rose,
+//   "Eldritch": staff,
+//   "Mystic": herbs,
+//   "Arcane": staff,
+//   "Infernal": book,
+//   "Cursed": potion,
+//   "Draconic": beans,
+//   "Abyssal": cookies,
+//   "Spectral": puff,
+//   "Haunted": book,
+//   "Necrotic": gem,
+//   "Wraithfare": puff,
+//   "Phantasmal": puff,
+//   "Lich": gem,
+//   "Revenant": owl,
+//   "Forbidden": beans,
+//   "Vampire": windowvamp,
+//   "Vittles": cookies,
+//   "Enchanted": rose,
+//   "Hexed": cauldron,
+//   "Twilight": gem,
+//   "DoomDew": tea,
+//   "Fiendish": book,
+//   "Delights": toffee,
+//   "Darkling": cookies,
+//   "NightDew": potion,
+//   "Elixir": potion,
+//   "Spellbound": staff,
+//   "Moonshine": potion,
+//   "Soul": herbs,
+//   "DragonBreath": owl,
+//   "Witch's": cauldron,
+//   "Sorcerer's": staff,
+//   "BloodySweets": toffee,
+//   "Rotten": herbs,
+//   "Blood": cauldron,
+// };
+
+const cuisineImageMapping2: { [key: string]: string } = {
+  Meat: cauldron,
+  Soup: cauldron,
+  Tart: cookies,
+  Elixir: potion,
+  Chili: beans,
+  Salad: herbs,
+  Sushi: gem,
+  Noodles: cauldron,
+  Waffles: cookies,
+  Pastry: puff,
+  Lollipop: toffee,
+  Roast: rose,
+  Vinaigrette: tea,
+  Empanadas: cookies,
+  Pie: cookies,
+  Truffle: cookies,
+  Dumplings: toffee,
+  Fajitas: cauldron,
+  Nectar: potion,
+  Morsels: staff,
+  Bites: toffee,
+  "Stir-fry": cauldron,
+  Wontons: cookies,
+  Stew: cauldron,
+  Bonbons: toffee,
+  Ratatouille: owl,
+  Biscuits: cookies,
+  Fillet: book,
+  Burger: cookies,
+  Nether: windowvamp,
+  Crisps: herbs,
+  Muffins: cookies,
+  Apples: herbs,
+  Curry: cauldron,
+  Delicacy: toffee,
+  Haggis: herbs,
+  Void: windowvamp,
+  Tacos: herbs,
+  Fondue: tea,
+  Pancakes: tea,
+  Goulash: herbs,
+  Pudding: toffee,
+  Sorbet: toffee,
+  Pasta: cauldron,
+  Rice: cauldron,
+  Crackers: cookies,
+  Brew: potion,
+  Candy: toffee,
 };
 
 const DetailPage = () => {
@@ -187,8 +238,9 @@ const DetailPage = () => {
           <RestaurantInfo restaurant={restaurant} />
           <span className="text-2xl font-bold tracking-tight">Menu</span>
           {restaurant.menuItems.map((menuItem) => {
-            const firstWord = menuItem.name.split(" ")[0];
-            const imageUrl = cuisineImageMapping[firstWord];
+            const words = menuItem.name.split(" ");
+            const getWord = words[words.length - 1];
+            const imageUrl = cuisineImageMapping2[getWord];
 
             return (
               <div className="flex items-center justify-between gap-5">
@@ -199,7 +251,7 @@ const DetailPage = () => {
                 {imageUrl && (
                   <img
                     src={imageUrl}
-                    alt={`${firstWord} cuisine image`}
+                    alt={`${getWord} cuisine image`}
                     className="w-20 h-20 object-cover"
                   />
                 )}
