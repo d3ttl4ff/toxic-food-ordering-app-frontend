@@ -51,7 +51,7 @@ export default function HomePage() {
     <div className="flex flex-col gap-12">
       <div className="md:px-32 relative bg-limeTheme-base_500 dark:backdrop-blur-3xl dark:bg-white/10 rounded-lg shadow-md py-8 text-center">
         <div className="z-10 flex flex-col gap-5">
-          <h1 className="relative text-3xl md:text-5xl font-bold tracking-tight text-white">
+          <h1 className="relative text-3xl md:text-5xl font-bold tracking-tight text-white dark:text-limeTheme-base_500">
             Give in to your toxic snack today!
           </h1>
           <span className="text-xl">Food is just a heart attack away!</span>
