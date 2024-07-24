@@ -23,7 +23,7 @@ export default function Header() {
 
   return (
     <div
-      className={`fixed z-50 border-[1px] border-slate-900/10 dark:border-slate-300/10 py-4 backdrop-blur-md w-[80vw] mt-5 rounded-full left-1/2 transform -translate-x-1/2 transition-all duration-500 ${
+      className={`fixed z-50 border-[1px] border-slate-900/10 dark:border-slate-300/10 py-4 backdrop-blur-md w-[80vw] max-w-[1229px] mt-5 rounded-full left-1/2 transform -translate-x-1/2 transition-colors duration-500 ${
         isScrolled
           ? "bg-white/70 supports-backdrop-blur:bg-white/90 dark:bg-slate-900/60"
           : "bg-white/60 supports-backdrop-blur:bg-white/60 dark:bg-transparent"

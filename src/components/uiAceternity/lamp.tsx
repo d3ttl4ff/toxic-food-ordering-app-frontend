@@ -2,8 +2,6 @@
 import React from "react";
 import { motion } from "framer-motion";
 import { cn } from "@/lib/utils";
-import { useNavigate } from "react-router-dom";
-import SearchBar, { SearchForm } from "../SearchBar";
 
 export const LampContainer = ({
   children,
@@ -12,15 +10,6 @@ export const LampContainer = ({
   children: React.ReactNode;
   className?: string;
 }) => {
-
-  const navigate = useNavigate();
-
-  const handleSearchSubmit = (searchFormValues: SearchForm) => {
-    navigate({
-      pathname: `/search/${searchFormValues.searchQuery}`,
-    });
-  };
-
   return (
     <div
       className={cn(
@@ -28,7 +17,7 @@ export const LampContainer = ({
         className
       )}
     >
-      <div className="relative flex w-full flex-1 scale-y-125 items-center justify-center isolate z-0 ">
+      <div className="relative flex w-full flex-1 scale-y-125 items-center justify-center isolate z-0 md:mt-30">
         <motion.div
           initial={{ opacity: 0.5, width: "15rem" }}
           whileInView={{ opacity: 1, width: "30rem" }}
@@ -88,14 +77,7 @@ export const LampContainer = ({
         <div className="absolute inset-auto z-40 h-44 w-full -translate-y-[12.5rem] bg-background "></div>
       </div>
 
-      <div className="z-10 mx-5 md:mx-40">
-        <SearchBar
-          placeholder="Search by City or Town"
-          onSubmit={handleSearchSubmit}
-        />
-      </div>
-
-      <div className="relative z-50 flex -translate-y-96 flex-col items-center px-5">
+      <div className="relative z-50 flex -translate-y-96 flex-col items-center px-5 mt-10">
         {children}
       </div>
     </div>

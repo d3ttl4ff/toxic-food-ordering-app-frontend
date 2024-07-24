@@ -1,8 +1,18 @@
 import { motion } from "framer-motion";
 // import hero from "../assets/main images/hero6.jpg";
 import { LampContainer } from "./uiAceternity/lamp";
+import SearchBar, { SearchForm } from "./SearchBar";
+import { useNavigate } from "react-router-dom";
 
 export default function Hero() {
+  const navigate = useNavigate();
+
+  const handleSearchSubmit = (searchFormValues: SearchForm) => {
+    navigate({
+      pathname: `/search/${searchFormValues.searchQuery}`,
+    });
+  };
+
   return (
     <div>
       {/* <img
@@ -19,11 +29,24 @@ export default function Hero() {
             duration: 0.8,
             ease: "easeInOut",
           }}
-          className="mt-10 bg-gradient-to-br from-limeTheme-selection_base dark:from-foreground to-limeTheme-selection_base dark:to-foreground py-4 bg-clip-text text-center text-4xl font-medium tracking-tight text-transparent md:text-7xl"
+          className="mt-10 mx-5 absolute bg-gradient-to-br from-limeTheme-selection_base dark:from-foreground to-limeTheme-selection_base dark:to-foreground py-4 bg-clip-text text-center text-4xl md:text-6xl font-medium tracking-tight text-transparent"
         >
-          "Consume away the will" <br /> Savor the vile{" "}
-          <span className="text-limeTheme-base_500">blood</span>
+          <div className="flex flex-col gap-12">
+            <div className="flex flex-col">
+              <span>"Consume away the will"</span>
+              <div>
+                Savor the vile{" "}
+                <span className="text-limeTheme-base_500">blood</span>
+              </div>
+            </div>
+          </div>
         </motion.h1>
+        <div className="z-10 mx-5 md:mx-40 absolute mt-60">
+          <SearchBar
+            placeholder="Search by City or Town"
+            onSubmit={handleSearchSubmit}
+          />
+        </div>
       </LampContainer>
     </div>
   );
