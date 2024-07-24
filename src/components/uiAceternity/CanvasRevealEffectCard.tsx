@@ -22,6 +22,7 @@ export function CanvasRevealEffectCard() {
       <div className="flex flex-col md:flex-row gap-10 justify-between">
         <Card
           title="Velen"
+          subTitle="Hover over me"
           icon={<GiAmmonite size={45} color="FFFFFF" />}
           bgImage={velenImg}
         >
@@ -39,6 +40,7 @@ export function CanvasRevealEffectCard() {
         </Card>
         <Card
           title="Novigrad"
+          subTitle="Hover over me"
           icon={<GiAmmoniteFossil size={45} color="FFFFFF" />}
           bgImage={novigradImg}
         >
@@ -56,6 +58,7 @@ export function CanvasRevealEffectCard() {
         </Card>
         <Card
           title="Vizima"
+          subTitle="Hover over me"
           icon={<GiBarbedCoil size={45} color="FFFFFF" />}
           bgImage={vizimaImg}
         >
@@ -73,6 +76,7 @@ export function CanvasRevealEffectCard() {
         </Card>
         <Card
           title="Siofra"
+          subTitle="Hover over me"
           icon={<GiBattleAxe size={45} color="FFFFFF" />}
           bgImage={siofraImg}
         >
@@ -95,11 +99,13 @@ export function CanvasRevealEffectCard() {
 
 const Card = ({
   title,
+  subTitle,
   icon,
   children,
   bgImage,
 }: {
   title: string;
+  subTitle?: string;
   icon: React.ReactNode;
   children?: React.ReactNode;
   bgImage?: string;
@@ -137,9 +143,12 @@ const Card = ({
         <div className="text-center group-hover/canvas-card:-translate-y-4 group-hover/canvas-card:opacity-0 transition duration-200 w-full mx-auto flex items-center justify-center">
           {icon}
         </div>
-        <h2 className="dark:text-foreground text-2xl opacity-0 group-hover/canvas-card:opacity-100 relative z-10 text-black font-bold group-hover/canvas-card:text-foreground group-hover/canvas-card:-translate-y-2 transition duration-200">
+        <h2 className="text-center dark:text-foreground text-2xl opacity-0 group-hover/canvas-card:opacity-100 relative z-10 text-black font-bold group-hover/canvas-card:text-foreground group-hover/canvas-card:-translate-y-2 transition duration-200">
           {title}
         </h2>
+        <div className="text-center group-hover/canvas-card:-translate-y-4 group-hover/canvas-card:opacity-0 transition duration-200 w-full mx-auto flex items-center justify-center">
+          {subTitle}
+        </div>
       </div>
     </div>
   );
