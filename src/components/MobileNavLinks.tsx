@@ -7,19 +7,19 @@ export default function MobileNavLinks() {
   return (
     <>
       <Link
-        className="flex bg-white items-center font-bold hover:text-ownTheme-base_500"
+        className="flex text-slate-900/95 dark:text-white/95 items-center font-bold hover:text-white/95 dark:hover:text-ownTheme-base_500"
         to={"/order-status"}
       >
         Order Status
       </Link>
       <Link
-        className="flex bg-white items-center font-bold hover:text-ownTheme-base_500"
+        className="flex text-slate-900/95 dark:text-white/95 items-center font-bold hover:text-white/95 dark:hover:text-ownTheme-base_500"
         to={"/manage-restaurant"}
       >
         My Restaurant
       </Link>
       <Link
-        className="flex bg-white items-center font-bold hover:text-ownTheme-base_500"
+        className="flex text-slate-900/95 dark:text-white/95 items-center font-bold hover:text-white/95 dark:hover:text-ownTheme-base_500"
         to={"/user-profile"}
       >
         User Profile
