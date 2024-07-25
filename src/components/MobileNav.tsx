@@ -22,7 +22,7 @@ export default function MobileNav() {
           <Menu className="text-ownTheme-base_500" />
         </SheetTrigger>
         <ThemeSwitcher />
-        <SheetContent className="space-y-3">
+        <SheetContent className="space-y-3 bg-white/60 supports-backdrop-blur:bg-white/60 dark:bg-slate-900/50 backdrop-blur-md">
           <SheetTitle>
             {isAuthenticated ? (
               <span className="flex items-center font-bold gap-2">

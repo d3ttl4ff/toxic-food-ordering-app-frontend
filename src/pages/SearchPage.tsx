@@ -93,12 +93,22 @@ const SearchPage = () => {
         />
       </div>
       <div id="main-content" className="flex flex-col gap-5">
-        <SearchBar
-          searchQuery={searchState.searchQuery}
-          onSubmit={setSearchQuery}
-          placeholder="Search by Cuisine or Restaurant Name"
-          onReset={resetSearch}
-        />
+        <div>
+          <SearchBar
+            searchQuery={searchState.searchQuery}
+            onSubmit={setSearchQuery}
+            placeholder="Search by Cuisine or Restaurant Name"
+            onReset={resetSearch}
+          />
+        </div>
+        {/* <div>
+          <SearchBar
+            searchQuery={searchState.searchQuery}
+            onSubmit={setSearchQuery}
+            placeholder="Search by Cuisine or Restaurant Name"
+            onReset={resetSearch}
+          />
+        </div> */}
         <div className="flex justify-between flex-col gap-3 lg:flex-row">
           <SearchResultInfo total={results.pagination.total} city={city} />
           <SortOptionDropdown

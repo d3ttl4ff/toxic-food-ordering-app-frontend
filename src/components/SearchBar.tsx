@@ -42,7 +42,7 @@ const SearchBar = ({ onSubmit, onReset, placeholder, searchQuery }: Props) => {
     <Form {...form}>
       <form
         onSubmit={form.handleSubmit(onSubmit)}
-        className={`md:w-[60vw] max-w-[768.95px] z-10 flex items-center gap-3 justify-between flex-row border-2 rounded-full p-2 m-5 md:m-0 ${
+        className={`md:w-full z-10 flex items-center gap-3 justify-between flex-row border-2 rounded-full p-2 m-5 md:m-0 ${
           form.formState.errors.searchQuery && "border-ownTheme-warning_base_500"
         }`}
       >

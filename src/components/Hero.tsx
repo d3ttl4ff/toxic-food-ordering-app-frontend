@@ -39,7 +39,7 @@ export default function Hero() {
             </div>
           </div>
         </motion.h1>
-        <div className="z-10 mx-5 md:mx-40 absolute flex flex-col">
+        <div className="md:w-[60vw] max-w-[768.95px] z-10 mx-5 md:mx-40 absolute flex flex-col">
           <div className="h-[26vh] max-h-[200px] relative"></div>
           <SearchBar
             placeholder="Search by City or Town"
