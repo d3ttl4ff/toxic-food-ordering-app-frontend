@@ -12,6 +12,7 @@ import { Button } from "./ui/button";
 import { useEffect, useState } from "react";
 
 export default function UsernameMenu() {
+  const CALLBACK_URL = import.meta.env.VITE_AUTH0_CALLBACK_URL;
   const { user, logout } = useAuth0();
 
   const [isDropdownOpen, setIsDropdownOpen] = useState(false);
@@ -58,7 +59,9 @@ export default function UsernameMenu() {
         <Separator />
         <DropdownMenuItem>
           <Button
-            onClick={() => logout()}
+            onClick={() =>
+              logout({ logoutParams: { returnTo: CALLBACK_URL } })
+            }
             className="flex flex-1 font-bold bg-ownTheme-base_500"
           >
             Log Out
