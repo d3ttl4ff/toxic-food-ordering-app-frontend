@@ -76,7 +76,7 @@ const OrderStatusHeader = ({ order }: Props) => {
           <span
             className={`text-base ${
               getETA().startsWith("-") && order.status !== "delivered"
-                ? "text-limeTheme-warning_base_500"
+                ? "text-ownTheme-warning_base_500"
                 : ""
             }`}
           >
@@ -92,7 +92,7 @@ const OrderStatusHeader = ({ order }: Props) => {
           getOrderStatusInfo().progressValue === 100 ? "" : "animate-pulse"
         }
         value={getOrderStatusInfo().progressValue}
-        color={getOrderStatusInfo().progressValue === 100 ? "#84cc16" : ""}
+        color={getOrderStatusInfo().progressValue === 100 ? "hsl(var(--theme-base-600))" : ""}
       />
     </>
   ); 

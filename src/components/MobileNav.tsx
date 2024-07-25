@@ -19,14 +19,14 @@ export default function MobileNav() {
     <Sheet>
       <div className="flex items-center gap-4">
         <SheetTrigger>
-          <Menu className="text-limeTheme-base_500" />
+          <Menu className="text-ownTheme-base_500" />
         </SheetTrigger>
         <ThemeSwitcher />
         <SheetContent className="space-y-3">
           <SheetTitle>
             {isAuthenticated ? (
               <span className="flex items-center font-bold gap-2">
-                <CircleUserRound className="text-limeTheme-base_500" />
+                <CircleUserRound className="text-ownTheme-base_500" />
                 {user?.email}
               </span>
             ) : (
@@ -40,7 +40,7 @@ export default function MobileNav() {
             ) : (
               <Button
                 onClick={() => loginWithRedirect()}
-                className="flex-1 font-bold bg-limeTheme-base_500"
+                className="flex-1 font-bold bg-ownTheme-base_500"
               >
                 Log In
               </Button>

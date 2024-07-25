@@ -28,7 +28,7 @@ const OrderSummary = ({ restaurant, cartItems, removeFromCart }: Props) => {
       <CardHeader>
         <CardTitle className="text-2xl font-bold tracking-tight flex justify-between">
           <span>Your Order</span>
-          <span className="text-limeTheme-base_600">${getTotalCost()}</span>
+          <span className="text-ownTheme-base_600">${getTotalCost()}</span>
         </CardTitle>
       </CardHeader>
       <CardContent className="flex flex-col gap-5">
@@ -42,7 +42,7 @@ const OrderSummary = ({ restaurant, cartItems, removeFromCart }: Props) => {
             </span>
             <span className="flex items-center gap-1">
               <Trash
-                className="cursor-pointer text-limeTheme-warning_base_500"
+                className="cursor-pointer text-ownTheme-warning_base_500"
                 size={20}
                 onClick={() => removeFromCart(item)}
               />

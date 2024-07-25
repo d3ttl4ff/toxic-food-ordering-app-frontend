@@ -29,13 +29,13 @@ export default function Hero() {
             duration: 0.8,
             ease: "easeInOut",
           }}
-          className="mx-5 bg-gradient-to-br from-limeTheme-selection_base dark:from-foreground to-limeTheme-selection_base dark:to-foreground py-4 bg-clip-text text-center text-4xl md:text-6xl font-medium tracking-tight text-transparent"
+          className="mx-5 bg-gradient-to-br from-ownTheme-selection_base dark:from-foreground to-ownTheme-selection_base dark:to-foreground py-4 bg-clip-text text-center text-4xl md:text-6xl font-medium tracking-tight text-transparent"
         >
           <div className="flex flex-col">
             <span>"Consume away the will"</span>
             <div>
               Savor the vile{" "}
-              <span className="text-limeTheme-base_500">blood</span>
+              <span className="text-ownTheme-base_500">blood</span>
             </div>
           </div>
         </motion.h1>

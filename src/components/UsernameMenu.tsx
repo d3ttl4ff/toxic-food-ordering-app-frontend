@@ -32,17 +32,17 @@ export default function UsernameMenu() {
   return (
     <DropdownMenu open={isDropdownOpen} onOpenChange={setIsDropdownOpen}>
       <DropdownMenuTrigger
-        className="flex items-center px-3 font-bold hover:text-limeTheme-base_500 gap-2 focus:outline-none transition-all"
+        className="flex items-center px-3 font-bold hover:text-ownTheme-base_500 gap-2 focus:outline-none transition-all"
         onClick={() => setIsDropdownOpen(!isDropdownOpen)}
       >
-        <CircleUserRound className="text-limeTheme-base_500" />
+        <CircleUserRound className="text-ownTheme-base_500" />
         {user?.email}
       </DropdownMenuTrigger>
       <DropdownMenuContent className="">
         <DropdownMenuItem>
           <Link
             to="/manage-restaurant"
-            className="font-bold hover:text-limeTheme-base_500"
+            className="font-bold hover:text-ownTheme-base_500"
           >
             Manage Restaurant
           </Link>
@@ -50,7 +50,7 @@ export default function UsernameMenu() {
         <DropdownMenuItem>
           <Link
             to="/user-profile"
-            className="font-bold hover:text-limeTheme-base_500"
+            className="font-bold hover:text-ownTheme-base_500"
           >
             User Profile
           </Link>
@@ -59,7 +59,7 @@ export default function UsernameMenu() {
         <DropdownMenuItem>
           <Button
             onClick={() => logout()}
-            className="flex flex-1 font-bold bg-limeTheme-base_500"
+            className="flex flex-1 font-bold bg-ownTheme-base_500"
           >
             Log Out
           </Button>

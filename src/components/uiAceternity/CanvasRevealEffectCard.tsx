@@ -30,8 +30,8 @@ export function CanvasRevealEffectCard() {
             animationSpeed={3}
             containerClassName="bg-background"
             colors={[
-              [163, 230, 53],
-              [101, 163, 13],
+              [139, 92, 246],
+              [124, 58, 237],
             ]}
             dotSize={2}
           />
@@ -48,8 +48,8 @@ export function CanvasRevealEffectCard() {
             animationSpeed={3}
             containerClassName="bg-background"
             colors={[
-              [163, 230, 53],
-              [101, 163, 13],
+              [139, 92, 246],
+              [124, 58, 237],
             ]}
             dotSize={2}
           />
@@ -66,8 +66,8 @@ export function CanvasRevealEffectCard() {
             animationSpeed={3}
             containerClassName="bg-background"
             colors={[
-              [163, 230, 53],
-              [101, 163, 13],
+              [139, 92, 246],
+              [124, 58, 237],
             ]}
             dotSize={2}
           />
@@ -84,8 +84,8 @@ export function CanvasRevealEffectCard() {
             animationSpeed={3}
             containerClassName="bg-background"
             colors={[
-              [163, 230, 53],
-              [101, 163, 13],
+              [139, 92, 246],
+              [124, 58, 237],
             ]}
             dotSize={2}
           />
@@ -115,7 +115,7 @@ const Card = ({
     <div
       onMouseEnter={() => setHovered(true)}
       onMouseLeave={() => setHovered(false)}
-      className="border border-limeTheme-base_600 group/canvas-card flex items-center justify-center dark:border-foreground/[0.2] max-w-sm w-80 md:w-[20vw] mx-auto p-4 relative h-[25rem]"
+      className="border border-ownTheme-base_600 group/canvas-card flex items-center justify-center dark:border-foreground/[0.2] max-w-sm w-80 md:w-[20vw] mx-auto p-4 relative h-[25rem]"
       style={{
         backgroundImage: `url(${bgImage})`,
         backgroundSize: "cover",

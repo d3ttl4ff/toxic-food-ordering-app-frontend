@@ -45,16 +45,16 @@
     --radius: 0.5rem;
 
     /* custom colors */
-    --lime-theme-base-400: 198.4,93.2%,59.6%;
-    --lime-theme-base-500: 83.7,80.5%,44.3%;
-    --lime-theme-base-600: 84.8,85.2%,34.5%;
-    --selection-base: 222.2,47.4%,11.2%;
-    --link-base-500: 198.6,88.7%,48.4%;
-    --warning-base-500: 0,84.2%,60.2%;
+    --theme-base-400: 198.4, 93.2%, 59.6%;
+    --theme-base-500: 83.7, 80.5%, 44.3%;
+    --theme-base-600: 84.8, 85.2%, 34.5%;
+    --selection-base: 222.2, 47.4%, 11.2%;
+    --link-base-500: 198.6, 88.7%, 48.4%;
+    --warning-base-500: 0, 84.2%, 60.2%;
   }
 
   .dark {
-    --background: 222.2,47.4%,11.2%;
+    --background: 222.2, 47.4%, 11.2%;
     --foreground: 210 40% 98%;
 
     --card: 222.2 84% 4.9%;
@@ -81,6 +81,14 @@
     --border: 217.2 32.6% 17.5%;
     --input: 217.2 32.6% 17.5%;
     --ring: 212.7 26.8% 83.9%;
+
+    /* custom colors */
+    --theme-base-400: 172.5, 66%, 50.4%;
+    --theme-base-500: 258.3, 89.5%, 66.3%;
+    --theme-base-600: 262.1, 83.3%, 57.8%;
+    --selection-base: 222.2, 47.4%, 11.2%;
+    --link-base-500: 198.6, 88.7%, 48.4%;
+    --warning-base-500: 0, 84.2%, 60.2%;
   }
 }
 
@@ -92,7 +100,7 @@
     @apply bg-background text-foreground font-flesh_and_blood;
   }
 }
- 
+
 .max-mt {
   margin-top: max(26vh, 20px);
 }

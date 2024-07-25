@@ -60,10 +60,10 @@ module.exports = {
           foreground: "hsl(var(--card-foreground))",
         },
         // cutom colors
-        limeTheme : {
-          base_400: "hsl(var(--lime-theme-base-400))",
-          base_500: "hsl(var(--lime-theme-base-500))",
-          base_600: "hsl(var(--lime-theme-base-600))",
+        ownTheme : {
+          base_400: "hsl(var(--theme-base-400))",
+          base_500: "hsl(var(--theme-base-500))",
+          base_600: "hsl(var(--theme-base-600))",
           link_base_500: "hsl(var(--link-base-500))",
           warning_base_500: "hsl(var(--warning-base-500))",
           selection_base: "hsl(var(--selection-base))",

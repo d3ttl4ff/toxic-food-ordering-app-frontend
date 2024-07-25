@@ -13,7 +13,7 @@ export default function MainNav() {
         <>
           <Link
             to="/order-status"
-            className="font-bold hover:text-limeTheme-base_500 transition-all"
+            className="font-bold hover:text-ownTheme-base_500 transition-all"
           >
             Order Status
           </Link>
@@ -22,7 +22,7 @@ export default function MainNav() {
       ) : (
         <Button
           variant="ghost"
-          className="font-bold hover:text-limeTheme-base_500 hover:bg-white"
+          className="font-bold hover:text-ownTheme-base_500 hover:bg-white"
           onClick={async () => await loginWithRedirect()}
         >
           Log In

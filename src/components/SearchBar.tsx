@@ -43,13 +43,13 @@ const SearchBar = ({ onSubmit, onReset, placeholder, searchQuery }: Props) => {
       <form
         onSubmit={form.handleSubmit(onSubmit)}
         className={`md:w-[60vw] max-w-[768.95px] z-10 flex items-center gap-3 justify-between flex-row border-2 rounded-full p-2 m-5 md:m-0 ${
-          form.formState.errors.searchQuery && "border-limeTheme-warning_base_500"
+          form.formState.errors.searchQuery && "border-ownTheme-warning_base_500"
         }`}
       >
         <Search
           strokeWidth={2.5}
           size={30}
-          className="ml-1 text-limeTheme-base_500 hidden md:block"
+          className="ml-1 text-ownTheme-base_500 hidden md:block"
         />
         <FormField
           control={form.control}
@@ -74,7 +74,7 @@ const SearchBar = ({ onSubmit, onReset, placeholder, searchQuery }: Props) => {
         >
           Reset
         </Button>
-        <Button type="submit" className="rounded-full bg-limeTheme-base_500">
+        <Button type="submit" className="rounded-full bg-ownTheme-base_500">
           Search
         </Button>
       </form>

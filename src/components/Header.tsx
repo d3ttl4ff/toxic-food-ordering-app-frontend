@@ -32,7 +32,7 @@ export default function Header() {
       <div className="container mx-auto flex justify-between items-center px-6">
         <Link
           to="/"
-          className="text-2xl font-bold tracking-tight text-slate-900 dark:text-limeTheme-base_500"
+          className="text-2xl font-bold tracking-tight text-slate-900 dark:text-ownTheme-base_500"
         >
           ToxicEats
         </Link>

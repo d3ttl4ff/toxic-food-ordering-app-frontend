@@ -61,7 +61,7 @@ const SearchResultCard = ({ restaurant }: Props) => {
       </Section>
       <div>
         <Section center>
-          <h3 className="text-2xl font-semibold tracking-tight mb-2 group-hover:font-bold group-hover:text-limeTheme-base_600 transition-all">
+          <h3 className="text-2xl font-semibold tracking-tight mb-2 group-hover:font-bold group-hover:text-ownTheme-base_600 transition-all">
             {restaurant.restaurantName}
           </h3>
         </Section>
@@ -78,8 +78,8 @@ const SearchResultCard = ({ restaurant }: Props) => {
           </Section>
           <div className="flex gap-2 flex-col">
             <Section>
-              <div className="flex items-center gap-1 text-limeTheme-base_600">
-                <Clock className="text-limeTheme-base_600" />
+              <div className="flex items-center gap-1 text-ownTheme-base_600">
+                <Clock className="text-ownTheme-base_600" />
                 {restaurant.estimatedDeliveryTime} mins
               </div>
             </Section>

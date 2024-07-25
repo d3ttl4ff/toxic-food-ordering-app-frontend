@@ -87,9 +87,9 @@ export default function HomePage() {
   return (
     <div className="flex flex-col gap-12">
       <Section>
-        <div className="md:px-32 relative bg-limeTheme-base_500 dark:backdrop-blur-3xl dark:bg-white/10 rounded-lg shadow-md py-8 text-center">
+        <div className="md:px-32 relative bg-ownTheme-base_500 dark:backdrop-blur-3xl dark:bg-white/10 rounded-lg shadow-md py-8 text-center">
           <div className="z-10 flex flex-col gap-5">
-            <h1 className="relative text-3xl md:text-5xl font-bold tracking-tight text-white dark:text-limeTheme-base_500">
+            <h1 className="relative text-3xl md:text-5xl font-bold tracking-tight text-white dark:text-ownTheme-base_500">
               Give in to your toxic snack today!
             </h1>
             <span className="text-xl">Food is just a heart attack away!</span>
@@ -106,7 +106,7 @@ export default function HomePage() {
         <div className="flex flex-col items-center gap-5 my-8">
           <div className="text-lg mb-5">
             Now{" "}
-            <span className="text-limeTheme-base_500 hover:font-bold transition-all">
+            <span className="text-ownTheme-base_500 hover:font-bold transition-all">
               available
             </span>{" "}
             in these regions!
@@ -118,7 +118,7 @@ export default function HomePage() {
       <Separator />
 
       <Section>
-        <div className="md:px-32 relative bg-limeTheme-selection_base dark:backdrop-blur-3xl dark:bg-white/10 rounded-lg shadow-md py-8 text-center overflow-hidden my-8">
+        <div className="md:px-32 relative bg-ownTheme-selection_base dark:backdrop-blur-3xl dark:bg-white/10 rounded-lg shadow-md py-8 text-center overflow-hidden my-8">
           <div className="flex gap-3 items-center justify-center">
             {cuisineImageList.map((image, index) => (
               <img

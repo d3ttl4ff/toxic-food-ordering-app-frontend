@@ -11,7 +11,7 @@ const SearchResultInfo = ({ total, city }: Props) => {
       <span>
         {total} Restaurant found in {city}
         <Link
-          className="ml-1 text-sm font-semibold underline cursor-pointer text-limeTheme-link_base_500"
+          className="ml-1 text-sm font-semibold underline cursor-pointer text-ownTheme-link_base_500"
           to="/"
         >
           Change Location

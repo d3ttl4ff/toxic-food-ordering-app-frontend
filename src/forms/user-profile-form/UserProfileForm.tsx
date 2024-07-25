@@ -136,7 +136,7 @@ const UserProfileForm = ({
         {isLoading ? (
           <LoadingButton />
         ) : (
-          <Button type="submit" className="bg-limeTheme-base_500">
+          <Button type="submit" className="bg-ownTheme-base_500">
             {buttonText}
           </Button>
         )}
