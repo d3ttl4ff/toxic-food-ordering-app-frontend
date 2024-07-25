@@ -29,19 +29,18 @@ export default function Hero() {
             duration: 0.8,
             ease: "easeInOut",
           }}
-          className="mt-10 mx-5 absolute bg-gradient-to-br from-limeTheme-selection_base dark:from-foreground to-limeTheme-selection_base dark:to-foreground py-4 bg-clip-text text-center text-4xl md:text-6xl font-medium tracking-tight text-transparent"
+          className="mx-5 bg-gradient-to-br from-limeTheme-selection_base dark:from-foreground to-limeTheme-selection_base dark:to-foreground py-4 bg-clip-text text-center text-4xl md:text-6xl font-medium tracking-tight text-transparent"
         >
-          <div className="flex flex-col gap-12">
-            <div className="flex flex-col">
-              <span>"Consume away the will"</span>
-              <div>
-                Savor the vile{" "}
-                <span className="text-limeTheme-base_500">blood</span>
-              </div>
+          <div className="flex flex-col">
+            <span>"Consume away the will"</span>
+            <div>
+              Savor the vile{" "}
+              <span className="text-limeTheme-base_500">blood</span>
             </div>
           </div>
         </motion.h1>
-        <div className="z-10 mx-5 md:mx-40 absolute mt-60">
+        <div className="z-10 mx-5 md:mx-40 absolute flex flex-col">
+          <div className="h-[26vh] max-h-[200px] relative"></div>
           <SearchBar
             placeholder="Search by City or Town"
             onSubmit={handleSearchSubmit}

@@ -93,3 +93,6 @@
   }
 }
  
+.max-mt {
+  margin-top: max(26vh, 20px);
+}
