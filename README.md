@@ -1,7 +1,4 @@
 <div align="center">
-
-# `CozmicEats`
-
 <img src="./thumbnails/mmthumb.gif" width="1280"/>
 </div>
 <br>
@@ -11,7 +8,7 @@
 </div>
 <br>
 
-# CozmicEats Food Ordering Web App
+# `CozmicEats` Food Ordering Web App
 
 CozmicEats is a food ordering web app that allows users to order food from a variety of restaurants. Users can `create an account`, `browse restaurants`, `view menus`, and `place orders`. The app also includes a feature that allows users to `track orders` in real-time. The app uses `Stripe API` for payment processing and `MongoDB` for data storage.
 
