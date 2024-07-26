@@ -2,7 +2,7 @@
 
 <div align="left">
   <img src="https://skillicons.dev/icons?i=react,nodejs,express,typescript,tailwind,mongo" />
-  <div style="margin-top: 10px;"><img src="./thumbnails/mmthumb.gif" width="1280"/></div>
+  <img src="./thumbnails/mmthumb.gif" width="1280"/>
 </div>
 
 ## Description
