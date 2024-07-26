@@ -1,18 +1,19 @@
 # `CozmicEats` Food Ordering Web App
-<div align="center">
+
+<div align="left">
   <img src="https://skillicons.dev/icons?i=react,nodejs,express,typescript,tailwind,mongo" />
-  </br>
-  <img src="./thumbnails/mmthumb.gif" width="1280"/>
+  <div style="margin-top: 10px;"><img src="./thumbnails/mmthumb.gif" width="1280"/></div>
 </div>
 
-
 ## Description
+
 CozmicEats is a food ordering web app that allows users to order food from a variety of restaurants. Users can `create an account`, `browse restaurants`, `view menus`, and `place orders`. The app also includes a feature that allows users to `track orders` in real-time. The app uses `Stripe API` for payment processing and `MongoDB` for data storage.
 
 > [!NOTE]\
 > The food items and the theme of the app are fictional and they are based on medieval and fantasy themes. Some might find them humorous or distasteful 🫠. But don't worry, the app is intended for demonstration purposes only. And for FUN!
 
 ## Features
+
 ```md
 - User authentication
 - Restaurant browsing
@@ -24,7 +25,9 @@ CozmicEats is a food ordering web app that allows users to order food from a var
 - User profiles
 - Payment processing
 ```
+
 ## Technologies
+
 ```md
 - React
 - TypeScript
@@ -37,5 +40,7 @@ CozmicEats is a food ordering web app that allows users to order food from a var
 - HTML
 - CSS
 ```
+
 #
+
 Hope you enjoy those cosmic snacks. `Cheers!!` 🌚👽🥩
