@@ -1,10 +1,16 @@
-# ToxicEats Food Ordering Web App
-<img src="./thumbnails/mthumb.gif" width="1280"/>
-</br>
-<img src="https://skillicons.dev/icons?i=react,nodejs,express,typescript,tailwind,mongo" />
+# CozmicEats Food Ordering Web App
+<div align="center">
+  <img src="https://skillicons.dev/icons?i=react,nodejs,express,typescript,tailwind,mongo" />
+  </br>
+  <img src="./thumbnails/mmthumb.gif" width="1280"/>
+</div>
+
 
 ## Description
-ToxicEats is a food ordering web app that allows users to order food from a variety of restaurants. Users can create an account, browse restaurants, view menus, and place orders. The app also includes a feature that allows users to track their order in real-time. The app uses Stripe API for payment processing and MongoDB for data storage.
+CozmicEats is a food ordering web app that allows users to order food from a variety of restaurants. Users can create an account, browse restaurants, view menus, and place orders. The app also includes a feature that allows users to track their order in real-time. The app uses Stripe API for payment processing and MongoDB for data storage.
+
+> [!NOTE]\
+> The food items and the theme of the app are fictional and they are based on medieval and fantasy themes. Some might find them humorous or distasteful 😵‍💫. But don't worry app is intended for demonstration purposes only.
 
 ## Features
 - User authentication
@@ -23,4 +29,6 @@ ToxicEats is a food ordering web app that allows users to order food from a vari
 - MongoDB
 - Tailwind CSS
 - Stripe API
-
+- JavaScript
+- HTML
+- CSS

@@ -30,7 +30,7 @@ export default function MobileNav() {
                 {user?.email}
               </span>
             ) : (
-              <span>Welcome to ToxicEats</span>
+              <span>Welcome to CozmicEats</span>
             )}
           </SheetTitle>
           <Separator />

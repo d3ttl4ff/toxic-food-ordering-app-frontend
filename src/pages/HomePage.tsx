@@ -90,7 +90,7 @@ export default function HomePage() {
         <div className="md:px-32 relative bg-ownTheme-base_500 dark:backdrop-blur-3xl dark:bg-white/10 rounded-lg shadow-md py-8 text-center">
           <div className="z-10 flex flex-col gap-5">
             <h1 className="relative text-3xl md:text-5xl font-bold tracking-tight text-white dark:text-ownTheme-base_500">
-              Give in to your toxic snack today!
+              Give in to your cozmic desire today!
             </h1>
             <span className="text-xl">Food is just a heart attack away!</span>
             {/* <SearchBar
@@ -145,7 +145,7 @@ export default function HomePage() {
           </Section>
           <Section>
             <span>
-              Download the ToxicEats App for faster ordering and personilized
+              Download the CozmicEats App for faster ordering and personilized
               kidney failure recommendations
             </span>
           </Section>

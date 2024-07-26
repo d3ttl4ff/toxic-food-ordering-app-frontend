@@ -34,7 +34,7 @@ export default function Header() {
           to="/"
           className="text-2xl font-bold tracking-tight text-slate-900 dark:text-ownTheme-base_500"
         >
-          ToxicEats
+          CozmicEats
         </Link>
         <div className="md:hidden">
           <MobileNav />
