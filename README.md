@@ -1,5 +1,5 @@
 # ToxicEats Food Ordering Web App
-<img src="./thumbnails/mainthumb.gif" width="1280"/>
+<img src="./thumbnails/mthumb.gif" width="1280"/>
 </br>
 <img src="https://skillicons.dev/icons?i=react,nodejs,express,typescript,tailwind,mongo" />
 
