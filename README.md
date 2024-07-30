@@ -26,8 +26,6 @@ CozmicEats is a food ordering web app that allows users to order food from a var
 - Menu viewing
 - Order placement
 - Real-time order tracking
-- User reviews
-- Restaurant ratings
 - User profiles
 - Payment processing
 ```
