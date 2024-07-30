@@ -16,7 +16,7 @@ CozmicEats is a food ordering web app that allows users to order food from a var
 > The food items and the theme of the app are fictional and they are based on medieval and fantasy themes. Some might find them humorous or distasteful 🫠. But don't worry, the app is intended for demonstration purposes only. And for FUN!
 
 > [!WARNING]\
-> This is the backend repository of the CozmicEats app. The frontend repository can be found here [CozmicEats Backend](https://github.com/d3ttl4ff/toxic-food-ordering-app-backend).
+> This is the frontend repository of the CozmicEats app. The backend repository can be found here [CozmicEats Backend](https://github.com/d3ttl4ff/toxic-food-ordering-app-backend).
 
 ## Features
 
